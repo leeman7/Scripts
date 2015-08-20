@@ -10,5 +10,5 @@ clean:
 
 # Generate a new MD5sum of current directory. This will create a list of the 
 # hashes and the hashes will be saved as a .txt file (MD5sum.txt).
-md5sum:
+hashes:
 	./md5sum.sh

@@ -1,23 +1,25 @@
 #!/bin/bash
-#########################################################################
+############################################################# 
+#	GIT PUSH
 #
-#
-#
-#
-#########################################################################
-
-# git init
+# File:
+# Date:
+# Author:
+# Summary:
+#   
+############################################################
+# Gets the current directory you in.
 git init
 
-# git add .
+# Add a new repository to add to your Github
 git add .
 
-# git commint initial commmit
+# Commit the current directory to be pushed.
 git commit -m "Initial commit"
 
-# git remot
+# Define the Github directory to push to.
 git remote add origin https://github.com/leeman7/Scripts
 
-# git push
+# Pushes the Repository to
 git push -f origin master
 
