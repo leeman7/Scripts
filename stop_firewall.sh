@@ -15,11 +15,15 @@
 echo "----------WARNING STOPPING FIREWALL----------"
 echo "Stopping Firewall now and allowing everyone access..."
 iptables -F
+echo "--Flushing Chains--"
 iptables -X
+echo "--Flushing User Defined Chains--"
 iptables -t nat -F
+echo "--Turning Off NAT--"
 iptables -t nat -X
 iptables -t mangle -F
 iptables -t mangle -X
+echo "--Accepting All Traffic--"
 iptables -P INPUT ACCEPT
 iptables -P FORWARD ACCEPT
 iptables -P OUTPUT ACCEPT
