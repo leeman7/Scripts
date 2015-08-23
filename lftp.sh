@@ -1,27 +1,27 @@
 #!/bin/bash
 ####################################
-# LFTP SCRIP
+# LFTP SCRIPT
 # lftp is another method to get
 # files from a server using TLS
 # and SSL connections.
 # 
 ####################################
 # Please note this is SSL off
-# Username: leeman727
-# Password: 112091lrn
-# Server: 95.22.168.38
-lftp -e "set ftp:ssl-allow off;" -u leeman7,112091lrn 95.211.168.38
+# Username:
+# Password: 
+# Server: 
+lftp -e "set ftp:ssl-allow off;" -u USER,PASSWORD HOST
 
 # Implementation for SSL on
-lftp -p 21 -e "set ssl:verify-certificate no" -u leeman7,112091lrn 95.211.168.38
+lftp -p 21 -e "set ssl:verify-certificate no" -u USER,PASSWORD HOST
 
 # list directories in server
 ls -hal
 
 # change directories locally and remotely
 # locally -> remotely
-lcd /home/lee/Downloads/
-cd /downloads/iptorrents/server/ 
+lcd 
+cd 
 
 # using mget to download all pdf/epub from 
 nlist -hal
