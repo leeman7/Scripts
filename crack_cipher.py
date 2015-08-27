@@ -6,7 +6,7 @@
 #
 ###########################################################
  
-phrase="GUVF VF ZL FRPERG ZRFFNTR."
+phrase="MFDAI DAIDFIKPEN AFDKLAJVAIK"
 LETTERS="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 for key in range(len(LETTERS)):

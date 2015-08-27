@@ -16,6 +16,12 @@ find . -type f -name "*.pdf" -exec mv {} /home/lee/Documents \;
 find . -type f -name "*.txt" -exec mv {} /home/lee/Documents \;
 find . -type f -name "*.doc" -exec mv {} /home/lee/Documents \;
 
+# Find generic pictures with the file type: jpg, png, and gif
+# then move the files to the Pictures directory.
+find . -type f -name "*.jpg" -exec mv {} /home/lee/Pictures \;
+find . -type f -name "*.png" -exec mv {} /home/lee/Pictures \;
+find . -type f -name "*.gif" -exec mv {} /home/lee/Pictures \;
+
 # Find generic media file types: mp3 and mp4.
 # Then execute move all found files to indicated directory.
 find . -type f -name "*.mp3" -exec mv {} /home/lee/Music \;
