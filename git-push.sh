@@ -18,7 +18,7 @@ git add .
 git commit -m "Initial commit"
 
 # Define the Github directory to push to.
-git remote add origin https://github.com/leeman7/Scripts
+git remote add origin https://github.com/leeman7/scripts
 
 # Pushes the Repository to
 git push -f origin master
