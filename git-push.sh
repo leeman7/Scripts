@@ -8,7 +8,8 @@
 # Summary:
 #   
 ############################################################
-# Gets the current directory you in.
+DIR=$1
+# Gets the current directory your in.
 git init
 
 # Add a new repository to add to your Github
@@ -18,7 +19,7 @@ git add .
 git commit -m "Initial commit"
 
 # Define the Github directory to push to.
-git remote add origin https://github.com/leeman7/Scripts
+git remote add origin https://github.com/leeman7/DIR
 
 # Pushes the Repository to
 git push -f origin master
