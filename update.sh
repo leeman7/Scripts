@@ -18,3 +18,6 @@ sudo apt-get -y update
 echo "-------------------------UPGRADING SYSTEM---------------------------"
 sudo apt-get -y --show-progress upgrade
 
+#echo "-------------------------UPGRADING DISTRO---------------------------"
+#sudo apt-get dist-upgrade
+

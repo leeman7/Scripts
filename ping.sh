@@ -1,5 +1,4 @@
 #!/bin/bash
-cut
 while read host
 do
 	ping -c 4 "$host" >> output.txt
