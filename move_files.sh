@@ -2,11 +2,11 @@
 ##########################################################################
 #	MOVE NON-ESSENTIAL FILES
 # File: move_files.sh
-# Author: Lee
-# Date: 
+# Author: Lee Nardo
+# Date: Sat Sep 26 21:22:22 CDT 2015
 # Summary:
-# This script searches a directory for certain file types and then
-# proceeds to execute a move command them to the indicated folder.
+#  This script searches a directory for certain file types and then
+#  proceeds to execute a move command them to the indicated folder.
 # 
 ##########################################################################
 
@@ -15,6 +15,8 @@
 find . -type f -name "*.pdf" -exec mv {} /home/lee/Documents \;
 find . -type f -name "*.txt" -exec mv {} /home/lee/Documents \;
 find . -type f -name "*.doc" -exec mv {} /home/lee/Documents \;
+find . -type f -name "*.rft" -exec mv {} /home/lee/Documents \;
+find . -type f -name "*.docx" -exec mv {} /home/lee/Documents \;
 
 # Find generic pictures with the file type: jpg, png, and gif
 # then move the files to the Pictures directory.
@@ -26,6 +28,7 @@ find . -type f -name "*.gif" -exec mv {} /home/lee/Pictures \;
 # Then execute move all found files to indicated directory.
 find . -type f -name "*.mp3" -exec mv {} /home/lee/Music \;
 find . -type f -name "*.mp4" -exec mv {} /home/lee/Music \;
+find . -type f -name "*.flac" -exec mv {} /home/lee/Music \;
 
 # Find generic media file types: avi and mkv.
 # These are standard video files that should be moved to videos.
