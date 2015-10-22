@@ -1,8 +1,14 @@
 #!/usr/bin/python 
 ###########################################################
-#
-#
-#
+#	IP Search
+# File: ip_search.py
+# Author: Lee Nardo
+# Date: Sat Sep 26 21:47:04 CDT 2015 
+# Summary: 
+#  This script is used to give the user a quick summary
+#   of the current network they are on. Then prompt the
+#  user if they would like to look up a certain address
+#  or domain name.
 #
 ###########################################################
  
@@ -39,6 +45,6 @@ def find_service_name():
 	print "Port: %s => service name: %s" %(53, socket.getservbyport(53, 'udp'))
 
 find_service_name()
-convert_ip4_address()
 machine_info()
+convert_ip4_address()
 remote_info()

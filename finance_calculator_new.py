@@ -10,6 +10,8 @@
 #
 ##########################################################################
 
+import sys, os
+
 class Account(object):
 
 	def __init__(self, income, rent, expenses, acct, brokerage):

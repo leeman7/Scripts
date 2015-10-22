@@ -22,6 +22,11 @@ echo "-----TRACEROUTE TEST-----"
 echo -e "\n\n-----TRACEROUTE TEST-----\n" >> network_"$1".txt
 traceroute $1 >> network_"$1".txt
 
+# The following will run a LFT traceroute on the IP address provided
+echo "-----LFT TRACE TEST-----"
+echo -e "\n\n-----LFT TRACE TEST------\n" >> network_"$1".txt
+lft $1 >> network_"$1".txt
+
 # The following will do ping test to the IP address provided
 echo "-----PING TEST-----"
 echo -e "\n\n-----PING TEST-----\n" >> network_"$1".txt

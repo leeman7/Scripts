@@ -21,7 +21,7 @@ def main_menu():
 
 	# Print Menu
 	print "=========================================\n"
-	print "				TRIP APPLICATION			\n"
+	print "	TRIP APPLICATION			\n"
 	print "=========================================\n"
 	print "1. Expenses"
 	print "2. Travel"
