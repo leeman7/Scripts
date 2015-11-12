@@ -1,5 +1,5 @@
 #!/usr/bin/python
-FTP_SERVER = 'ftp.kernel.org'
+FTP_SERVER = ''
 
 import ftplib
 def test_connection(path, user, email):
@@ -14,4 +14,4 @@ def test_connection(path, user, email):
 	ftp.quit()
 
 if __name__ == '__main__':
-	test_connection(path=FTP_SERVER, user='anonymous', email='nobody@nourl.com')
+	test_connection(path=FTP_SERVER, user='', email='')
