@@ -6,6 +6,7 @@ infile = raw_input()
 
 lines = []
 
+#Open the html file for reading
 with open(infile, "r") as file:
     for line in file.readlines():
         if line[-1] == "\n":
@@ -13,15 +14,15 @@ with open(infile, "r") as file:
         lines.append(line)
 
 #Faculty member name
-temp = lines[294]
+temp = lines[297]
 firstName = temp.replace(" ", "").replace("("," (")
 
-temp = lines[297]
+temp = lines[300]
 lastName = temp.replace(" ","")
 name = firstName + " " + lastName 
 
 #Faculty member Education
-temp = lines[365]
+temp = lines[368]
 tempEducation = temp.replace("\"","").replace("</p></div>","").replace("<div class=","").replace("panel-body","").replace("><p>","")
 education2 = tempEducation.split()
 education = ""
@@ -30,7 +31,7 @@ for word in education2:
     education += " "
 
 #Faculty member Research Interests
-temp = lines[353]
+temp = lines[356]
 tempResearch = temp.replace("\"","").replace("</p></div>","").replace("<div class=","").replace("panel-body","").replace("><p>","")
 research2 = tempResearch.split()
 research = ""
@@ -39,7 +40,7 @@ for word in research2:
     research += " "
 
 #Faculty member Webpage
-temp = lines[339]
+temp = lines[342]
 tempWeb = temp.replace("\"","").replace("<h4><small><a target=","").replace("_blank","").replace(" href=","").replace("%7E","~").replace(">Homepage</a></small></h4>","")
 web = tempWeb.replace(" ","")
 
