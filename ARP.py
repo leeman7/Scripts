@@ -4,7 +4,7 @@ import sys
 import time
 from scapy.all import sendp, ARP, Ether
 
-if len(sys.arv) < 3:
+if len(sys.argv) < 3:
 	print sys.argv[0] + ": <target> <spoof_ip>"
 	sys.exit(1)
 
