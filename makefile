@@ -6,3 +6,4 @@ update: ;./update.sh ; sleep 3 ; ./clean.sh
 hashes: ;@echo "-----------HASHES------------";echo "------------HASHES-----------" > hashes.txt;./generate_hashes.sh >> hashes.txt
 tar: ;tar -cvf scripts.tar *.sh *.py *.pl
 push: ;@echo "-------------GIT-PUSH-------------";./git-push.sh Scripts
+play: 

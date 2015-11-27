@@ -148,17 +148,12 @@ month_sv=month_tl-savings
 net_worth=month_sv+account_tl+brokerage_tl
 
 print "\n----------------------------------------------\n 1-8 Calculating Totals\n----------------------------------------------\n"
-
 # Output the uses Net Account Worth
 print "Your Net Account Total: $%.2f " % account_tl
-
 # Oupurt Net Brokerage Account Worth
 print "Your Net Brokerage Account Total: $%.2f " % brokerage_tl
-
 # Output Net Monthly Income without Savings deduction
 print "Your Net Month Income (Without Savings taken out): $%.2f" % month_tl
-
 # Output Net Monthly Income with Savings deducted
 print "Your Net Monthly Income With %d Percent Towards Saving: $%.2f " % (percent, month_sv)
-
 print "Your Net Worth: $%.2f" % net_worth

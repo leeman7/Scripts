@@ -14,7 +14,7 @@
 # Copy recursively all files from following directory to
 # the listed source directory.
 echo "======DOCUMENTS====="
-# cp -R ~/Documents /media/lee/LEEF\ SUPRA/
+cp -R ~/Documents /media/lee/LEEF\ SUPRA/
 echo -ne "=====/---------------  25%\r"
 sleep 1
 echo "======DOWNLOADS====="
