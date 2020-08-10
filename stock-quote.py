@@ -24,4 +24,4 @@ def stockQuote(watchlist):
         counter+=1
 
         
-stockQuote(["MSFT","GOOGL","T"])
+stockQuote(["MSFT","GOOGL","T","BRKB","AAPL","FB","SBUX","MS","SCHW","CSCO","PG","DAL","JNJ","PFE"])
